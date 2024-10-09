@@ -11,7 +11,7 @@
 
 ### Функции для геометрических фигур
 
-#### 1. `area(r)` — Круг [Открыть circle.py]([http://](https://github.com/exf1kzz/geometric_lib/blob/lab_2_norm/circle.py)
+#### 1. `area(r)` — Круг [Открыть circle.py](https://github.com/exf1kzz/geometric_lib/blob/lab_2_norm/circle.py)
 
 Вычисляет площадь круга по заданному радиусу
 
