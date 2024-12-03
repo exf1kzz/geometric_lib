@@ -3,9 +3,10 @@ name: Run Unit Tests
 on:
   push:
     branches:
-      - main
-      - lab_4
+      - lab_4  # или main, если нужно
   pull_request:
+    branches:
+      - lab_4  # или main, если нужно
 
 jobs:
   test:
@@ -30,4 +31,4 @@ jobs:
 
     - name: Run tests
       run: |
-        python -m unittest discover -s . -p "*.py"
+        python -m unittest discover -s tests -p "*.py"
