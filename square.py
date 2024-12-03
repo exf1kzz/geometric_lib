@@ -49,3 +49,27 @@ class SquareTestCase(unittest.TestCase):
         res = perimeter(0)
         self.assertEqual(res, 0)
 
+    def test_float_area(self):
+        res = area(5.5)
+        self.assertEqual(res, 30.25)
+
+    def test_float_perimeter(self):
+        res = perimeter(5.5)
+        self.assertEqual(res, 22)
+
+    def test_string_to_int_area(self):
+        res = area(int("10"))
+        self.assertEqual(res, 100)
+
+    def test_string_to_int_perimeter(self):
+        res = perimeter(int("20"))
+        self.assertEqual(res, 80)
+
+    def test_string_to_float_area(self):
+        res = area(float("5.5"))
+        self.assertEqual(res, 30.25)
+
+    def test_string_to_float_perimeter(self):
+        res = perimeter(float("5.5"))
+        self.assertEqual(res, 22)
+
