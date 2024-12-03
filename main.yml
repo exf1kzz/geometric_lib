@@ -3,10 +3,10 @@ name: Run Unit Tests
 on:
   push:
     branches:
-      - lab_4  # или main, если нужно
+      - lab_4
   pull_request:
     branches:
-      - lab_4  # или main, если нужно
+      - lab_4
 
 jobs:
   test:
