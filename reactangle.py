@@ -32,6 +32,7 @@ def perimeter(a, b):
     '''
     return 2 * (a + b)
 
+
 class RectangleTestCase(unittest.TestCase):
     def test_zero_area(self):
         res = area(10, 0)
@@ -48,4 +49,29 @@ class RectangleTestCase(unittest.TestCase):
     def test_zero_perimeter(self):
         res = perimeter(0, 0)
         self.assertEqual(res, 0)
+
+    def test_float_area(self):
+        res = area(5.5, 3.2)
+        self.assertEqual(res, 17.6)
+
+    def test_float_perimeter(self):
+        res = perimeter(5.5, 3.2)
+        self.assertEqual(res, 17.4)
+
+    def test_string_to_int_area(self):
+        res = area(int("10"), int("5"))
+        self.assertEqual(res, 50)
+
+    def test_string_to_int_perimeter(self):
+        res = perimeter(int("10"), int("5"))
+        self.assertEqual(res, 30)
+
+    def test_string_to_float_area(self):
+        res = area(float("5.5"), float("3.2"))
+        self.assertEqual(res, 17.6)
+
+    def test_string_to_float_perimeter(self):
+        res = perimeter(float("5.5"), float("3.2"))
+        self.assertEqual(res, 17.4)
+
         
