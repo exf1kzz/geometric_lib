@@ -43,3 +43,27 @@ class CircleTestCase(unittest.TestCase):
     def test_zero_perimeter(self):
         res = perimeter(0)
         self.assertEqual(res, 0)
+
+    def test_float_area(self):
+        res = area(5.5)
+        self.assertAlmostEqual(res, 95.03317777109124, places=7)
+
+    def test_float_perimeter(self):
+        res = perimeter(5.5)
+        self.assertAlmostEqual(res, 34.55751918948773, places=7)
+
+    def test_string_to_int_area(self):
+        res = area(int("5"))
+        self.assertAlmostEqual(res, 78.53981633974483, places=7)
+
+    def test_string_to_int_perimeter(self):
+        res = perimeter(int("5"))
+        self.assertAlmostEqual(res, 31.41592653589793, places=7)
+
+    def test_string_to_float_area(self):
+        res = area(float("5.5"))
+        self.assertAlmostEqual(res, 95.03317777109124, places=7)
+
+    def test_string_to_float_perimeter(self):
+        res = perimeter(float("5.5"))
+        self.assertAlmostEqual(res, 34.55751918948773, places=7)
