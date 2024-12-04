@@ -27,4 +27,6 @@ jobs:
           pip install pytest
 
       - name: Run tests
-        run: python -m pytest unit_tests.py
+        run: |
+          cd src
+          python -m pytest ../unit_tests.py
